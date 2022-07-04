@@ -1,5 +1,17 @@
 GET http://localhost:3000
 
-###
+### Login route
 
-GET http://localhost:3000/sddsdsd
+POST  http://localhost:3000/auth/login
+
+### Register route
+
+POST  http://localhost:3000/auth/register
+
+### Refresh token route
+
+POST  http://localhost:3000/auth/refresh-token
+
+### Logout route
+
+DELETE   http://localhost:3000/auth/logout
