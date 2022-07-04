@@ -16,7 +16,9 @@ router.post("/register", async (req, res, next) => {
 
     const user = new User(result);
     const savedUser = await user.save();
+
     res.send(savedUser);
+    
   } catch (error) {
     if (error.isJoi === true) error.status = 422;
     next(error);
