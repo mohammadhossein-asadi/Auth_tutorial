@@ -1,5 +1,5 @@
 GET http://localhost:3000
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTcwMDYwNDYsImV4cCI6MTY1NzAwNjA2NiwiYXVkIjoiNjJjMzE2NTM5ZmE3NjgyMGVhZmY5ZDEyIiwiaXNzIjoibW9oYW1tYWRob3NzZWluLmNvbSJ9.PgYP3hxriYqaZKXuSnMr0k-MZSJZJkA8ouQkk1aEh70
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTcyNjgyNTYsImV4cCI6MTY1NzI2ODI3NiwiYXVkIjoiNjJjN2U4MjA2MjQ3NTFkYzA0YzVjM2JjIiwiaXNzIjoibW9oYW1tYWRob3NzZWluLmNvbSJ9.Vop3iIEpgg6YvaAEk18sKty0mDrL2b8s_tgheCHqs7A
 
 ### Login route
 POST  http://localhost:3000/auth/login
@@ -15,7 +15,7 @@ POST  http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "email": "newUser@gmail.com",
+    "email": "johndoe@gmail.com",
     "password": "mha77794060"
 }
 
@@ -29,3 +29,8 @@ Content-Type: application/json
 
 ### Logout route
 DELETE   http://localhost:3000/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NTcyNjk5MjIsImV4cCI6MTY4ODgyNzUyMiwiYXVkIjoiNjJjN2VlYTBkOWFhMmFiNDQ2ZDRiNzEwIiwiaXNzIjoibW9oYW1tYWRob3NzZWluLmNvbSJ9.5NC7k9Ja6EFshBpP-JtLybz20nYECNn8PICj-K-yBuw"
+}

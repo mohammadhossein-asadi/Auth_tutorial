@@ -68,9 +68,9 @@ module.exports = {
         process.env.REFRESH_TOKEN_SECRET,
         (err, payload) => {
           if (err) return reject(createError.Unauthorized());
-          const userId = payload.aud
+          const userId = payload.aud;
 
-          resolve(userId)
+          resolve(userId);
         }
       );
     });
