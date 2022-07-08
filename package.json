@@ -18,6 +18,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.4.2",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.18",
+    "redis": "^4.1.1",
+    "redis-commander": "^0.8.0"
   }
 }
